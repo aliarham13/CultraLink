@@ -2,7 +2,8 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api', // Pointing to your backend
+  // baseURL: 'http://localhost:5000/api', // Pointing to your backend
+     baseURL: 'https://cultralink-backend.onrender.com/api', 
 });
 
 // Automatically add token to headers if it exists
