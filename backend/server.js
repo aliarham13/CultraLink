@@ -33,8 +33,11 @@ app.use((err, req, res, next) => {
   res.status(500).json({ message: 'Server Error', error: err.message });
 });
 
-const PORT = process.env.PORT || 5000;
+// Grab Render's port, or default to 10000
+const PORT = process.env.PORT || 10000;
+
+// The '0.0.0.0' is the magic key. It tells Node to listen to the outside internet, not just localhost.
 app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`✅ Server is actively listening on port ${PORT}`);
 });
 
