@@ -5,7 +5,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
 const connectDB = require('./config/db');
-
+const mongoose = require('mongoose');
 // Import Routes
 const authRoutes = require('./routes/authRoutes'); // <--- ADDED
 const dataRoutes = require('./routes/dataRoutes'); // <--- ADDED
