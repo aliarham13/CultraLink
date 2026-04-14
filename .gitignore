@@ -32,3 +32,27 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Node dependencies (Ignores them in both folders automatically)
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Environment variables (NEVER push these to GitHub)
+.env
+backend/.env
+frontend/.env
+
+# Production build outputs (Vite/React)
+dist/
+frontend/dist/
+build/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

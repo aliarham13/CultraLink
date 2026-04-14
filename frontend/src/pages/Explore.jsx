@@ -110,11 +110,11 @@ const Explore = () => {
       {/* Grid Content */}
       {loading ? (
         <div className="flex justify-center items-center h-64">
-          <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-indigo-600"></div>
+          <div className="animate-spin rounded-full h-10 w-10 border-t-4 border-b-4 border-indigo-600"></div>
         </div>
       ) : (
         <>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
             {/* NEW: Slice based on visibleCount */}
             {filteredCountries.slice(0, visibleCount).map((country, index) => (
                <CountryCard key={country.cca3} country={country} index={index} />
